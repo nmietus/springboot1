@@ -1,3 +1,4 @@
+
 package com.springboot.basics.springbootproject1;
 
 import org.springframework.boot.SpringApplication;
