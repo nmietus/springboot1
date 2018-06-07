@@ -4,7 +4,7 @@ public class Book {
 	long id;
 	String name;
 	String author;
-	public Book(long id, String name, String author) {
+ Book(long id, String name, String author) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -19,7 +19,7 @@ public class Book {
 	public String getName() {
 		return name;
 	}
-	public void setName(String name) {
+	public void setName(String name) { 
 		this.name = name;
 	}
 	public String getAuthor() {
