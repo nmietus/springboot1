@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
-import ch.qos.logback.core.util.SystemInfo;
+import com.springboot.basics.springbootproject1.basic.BinarySearchImplement;
 
 @SpringBootApplication
 public class SpringbootProject1Application {
@@ -19,6 +19,10 @@ public class SpringbootProject1Application {
 				SpringApplication.run(SpringbootProject1Application.class, args);
 		
 		BinarySearchImplement binarySearch = applicationContext.getBean(BinarySearchImplement.class);
+		BinarySearchImplement binarySearch1 = applicationContext.getBean(BinarySearchImplement.class);
+		
+		System.out.println(binarySearch);
+		System.out.println(binarySearch1);
 		
 		int result = 
 				binarySearch.binarySearch(new int[] {12, 4, 5}, 3);
